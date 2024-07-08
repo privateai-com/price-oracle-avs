@@ -1,5 +1,20 @@
 # PriceOracle-AVS
 
+
+
+L1:
+ - ERC20: 0x73967c6a0904aA032C103b4104747E88c566B1A2
+ - AvsGovernance: 0xc4Acbe9ace7517629f540004E1E04118dd03fe9C
+ - Vault: 0x068af05637df2a733edEAD28d7398493309728cb
+ - L1MessageHandler: 0xE6b4cCEe5DE4597ed1D66a69913B2364eF686fa1 (0.0 ETH)
+L2:
+ - AttestationCenter: 0x23D086EE760c7B4c2b4406b81b5D90644c916305
+ - L2MessageHandler: 0x9d2DbC90EeF504b08ddA51Ba13C059Cb850c7652 (0.0 ETH)
+ - OBLS: 0x7eb2D7c2Bc504A60A93d0519b5830F81241A96Cc
+ - BN256G2: 0x497B6f4109667B9e31dF7047d2bACAc81c115a99
+AVS deployment done!
+
+
 ## PrivateHealthAI
 
 - This repository contains the code for a private ai task performer and webAPI validator.
