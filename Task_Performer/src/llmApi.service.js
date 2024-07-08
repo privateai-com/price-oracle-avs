@@ -8,7 +8,7 @@ const initialPrompt = "You are an assistant who is experienced in the healthcare
     try{
       res = await axios.post("https://ai.privateai.com:5000/v1/completions",{
         "model": "openbiollm-llama3-8b",
-        "prompt": initialPrompt + "Medical Question: "+prompt+" Medical Answer:",
+        "prompt": initialPrompt + "Medical Question: "+prompt+"? Medical Answer:",
         "temperature": 0.1
     })
       console.log(res.data.choices[0].text);
