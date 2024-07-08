@@ -15,6 +15,10 @@ router.post("/execute", async (req, res) => {
         console.log(`taskDefinitionId: ${taskDefinitionId}`);
         
         const result = await llmApiService.getLLMResponse(req.body.prompt);
+        if(result == 0 ){
+            console.log(e);
+            return res.status(500).send(new CustomError("Something went wrong", {}));
+        }
         const json = {
             taskDefinitionId :req.body.taskDefinitionId,
             prompt :req.body.prompt,

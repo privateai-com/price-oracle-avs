@@ -12,10 +12,11 @@ const initialPrompt = "You are an assistant who is experienced in the healthcare
         "temperature": 0.1
     })
       console.log(res.data.choices[0].text);
+      return res.data.choices[0].text
     }catch(e){
       console.log(e);
+      return 0;
     }
-    return res.data.choices[0].text
   }
   
   module.exports = {
